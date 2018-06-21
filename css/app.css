@@ -76,3 +76,56 @@ transition: all 0.5s;
 background-color:#0b91b6;
 box-shadow:none;
 }
+/*
+    if they chose correct answer
+*/
+.correct{
+	box-shadow:0px 0px 0px 1px #15c26b inset;
+}
+
+.correct label::before{
+content: "";
+display: inline-block;
+position: absolute;
+left: 16px;
+top: 18px;
+width: 30px;
+height: 30px;
+background: #fff url(https://classroom.udacity.com/images/answer-correct-d7c4d.svg);
+background-size: contain;
+z-index: 10;
+}
+/*for الصوره المنبثقه*/
+#overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(46,60,73,.7);  
+    z-index: 100;
+    transition: all 0.5s;
+}
+.modal-content{
+	width: 400px;
+	height: 210px;
+	background: #fff;
+	border-radius: 8px;
+  	margin: 80px auto;
+	padding: 20px;
+	z-index: 101;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.2);
+}
+ #modal-elements{
+	width: 150px;
+    margin: 0 auto;
+	text-align: center;
+   	font-size: 16px;
+   	font-weight: 600;
+	color: #02ccba;
+	margin-top: 10px;
+	padding-top: 160px;
+ 	background: url(https://classroom.udacity.com/images/correct-illustration-ceea2.svg) no-repeat center top;
+}
+	
